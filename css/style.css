@@ -1,8 +1,15 @@
 body{
-
+	font: 400 16px/1.5 'AleoBA', Arial, sans-serif;
+	color: #3b3b3b;
 }
 
 /* Typography */
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #f34949;
+}
 a,
 input[type="submit"],
 input[type="button"],
@@ -49,5 +56,354 @@ select:focus {
 textarea {
 
 }
+h1,h2,h3,h4,h5,h6{
+	text-transform: uppercase;
+}
+ul{
+	padding: 0;
+    margin: 0;
+}
+.ba-container-center{
+	max-width: 1100px;
+}
 
+.ba-logo-header{
+	display: inline-block;
+}
+.ba-header{
+	height: 110px;
+	line-height: 110px;
+
+}
+.ba-main-menu{
+	list-style: none;
+	color: #3b3b3b;
+	font-size: 0;
+}
+.ba-main-menu li{
+	display: inline-block;
+	text-transform: capitalize;
+	font-size: 14px;
+}
+.ba-main-menu a{
+	display: block;
+	height: 100%;
+	padding-left: 50px;
+	font-weight: 400;
+	color: #3b3b3b;
+}
+.ba-main-menu a:hover{
+	color: #f34949;
+}
+
+
+/*BANNER*/
+.ba-banner__img{
+	border-bottom: 4px solid #f34949;
+	position: relative;
+}
+.ba-banner__img:before{
+	content: " ";
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(59, 59, 59, .8);
+}
+.ba-banner__img img{
+	display: block;
+	width: 100%;
+	height: 550px;
+}
+.ba-banner__text{
+	position: absolute;
+	top: 350px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFF;
+	line-height: 60px;
+}
+.ba-banner__text_title{
+	font: 400 100px/60px 'WCManoNegraBtaBA', 'AleoBA', Arial, sans-serif;
+	letter-spacing: -9px;
+	text-transform: none;
+	margin: 0;
+}
+.ba-banner__text_item{
+	position: relative;
+}
+.ba-banner__text_item:before,
+.ba-banner__text_item:after{
+	position: absolute;
+	content: " ";
+	display: table;
+	width: 40px;
+	height: 1px;
+	background: #FFF;
+	top:29px;
+}
+.ba-banner__text_item:before{
+	left: 430px;
+}
+.ba-banner__text_item:after{
+	right: 430px;
+}
+.ba-banner__menu{
+	position: relative;
+	background: url(../img/menu-bg.png) 50% no-repeat;
+	text-align: center;
+	max-width: 153px;
+	height: 75px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ba-banner__menu-link{
+	color: #FFF;
+	display: block;
+	padding: 15px 25px 30px;
+	font-size: 20px;
+	font-weight: 700;
+}
+.ba-banner__menu-link:hover{
+	color: #3b3b3b;
+}
+
+
+/*MENU*/
+.ba-menu{
+	padding-top: 65px;
+	padding-bottom: 100px;
+	color: #555;
+	line-height: 10px;
+}
+.ba-menu-food{
+	margin-bottom: 30px;
+}
+.ba-menu-dish{
+	background: #fff;
+	position: relative;
+	z-index: 100;
+}
+.ba-menu-dish__title{
+	font-size: 16px;
+	padding-right: 40px;
+}
+.ba-menu-dish__consist{
+	font-size: 12px;
+	font-weight: 300;
+	font-style: italic;
+	color: #b7b7b7;
+}
+.ba-menu-price{
+	position: relative;
+}
+.ba-menu-price:after{
+	content: "";
+	display: table;
+	position: absolute;
+	top: 50%;
+	right: 50px;
+	height: 1px;
+	width: 400px;
+	background: #e3e1e1;
+	z-index: 90;
+}
+.ba-menu .ba-width-1-2:first-child{
+	padding-right: 40px;
+}
+.ba-menu .ba-width-1-2 + .ba-width-1-2 {
+	padding-left: 40px;
+}
+.ba-menu .ba-grid{
+	padding-bottom: 50px;
+}
+.ba-menu__button{
+	display: block;
+	max-width: 135px;
+	color: #b7b7b7;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 15px;
+	border: 1px solid #b7b7b7;
+	position: relative;
+
+}
+.ba-menu__button_vertical{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.ba-menu__button:hover{
+	border-color: #f34949;
+}
+.cls-1 {
+	-webkit-transition: color .3s ease-in;
+	-moz-transition: color .3s ease-in;
+	transition: fill .3s ease-in;
+}
+.ba-menu__button:hover .cls-1 {
+	fill: #f34949;
+	-webkit-transition: color .3s ease-in;
+	-moz-transition: color .3s ease-in;
+	transition: fill .3s ease-in;
+}
+
+
+/*FEATURE DISHES*/
+.ba-feature-dishes{
+	color: #555;
+	font-size: 16px;
+	font-weight: 300;
+	padding-top: 70px;
+	padding-bottom: 100px;
+	position: relative;
+}
+.ba-feature-dishes__title{
+	font-size: 20px;
+	padding-bottom: 53px;
+	letter-spacing: 1px;
+}
+/*slider*/
+.ba-feature-dishes__slider{
+	position: absolute;
+    top: 98px;
+    right: 0;
+}
+.ba-circle{
+	display: inline-block;
+	height: 9px;
+	width: 9px;
+	background: #dedede;
+	float: right;
+	margin-left: 10px;
+}
+.ba-circle_dark{
+	background: #9b9b9b;
+}
+/*end slider*/
+.ba-feature-dishes_colomn-padding > [class*="ba-width-"] {
+	float: left;
+	padding-left: 60px;
+}
+.ba-feature-dishes_colomn-padding {
+	margin-left: -60px;
+}
+.ba-feature-dishes__img-overlay img{
+	display: block;
+	width: 100%;
+}
+.ba-feature-dishes__info{
+	padding-top: 10px;
+	padding-bottom: 22px;
+	color: #555;
+}
+.ba-feature-dishes__info_title,
+.ba-feature-dishes__info_price{
+	margin-bottom: 0;
+}
+.ba-feature-dishes__info_star{
+	list-style: none;
+	font-size: 0;
+}
+.ba-feature-dishes__info_star li{
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	margin-top: 5px;
+	margin-right: 6px;
+	background: url(../img/star.png) 0 50% no-repeat;
+}
+li.ba-star-light{
+	background-position: 90% 50% ;
+}
+.ba-line-after-title:after{
+	content: "";
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 6px;
+	height: 1px;
+	width: 200px;
+	background: #e5e3e3;
+}
+.ba-dish-item{
+	position: relative;
+}
+.ba-dish-item__overlay{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #FFF;
+	opacity: 0;
+	transition: opacity .3s ease-in, visibility .3s ease-in;
+}
+.ba-dish-item:hover .ba-dish-item__overlay{
+	visibility: visible;
+	opacity: .3;
+}
+.ba-feature-dishes .ba-dish-item:hover .ba-dish-item__overlay{
+	transition: opacity .3s ease-in, visibility .3s ease-in;
+}
+
+
+/*GALLERY*/
+.ba-gallery{
+	padding-top: 50px;
+	padding-bottom: 200px;
+}
+.ba-gallery__title{
+	font-size: 22px;
+	padding-bottom: 50px;
+	letter-spacing: 1px;
+}
+.ba-gallery__img{
+	display: block;
+	width: 100%;
+}
+
+
+/*FOOTER*/
+.ba-footer{
+	background: #3b3b3b;
+	padding-top: 90px;
+	padding-bottom: 90px;
+	line-height: 30px;
+	color: #FFF;
+}
+.ba-footer__address_title{
+	font-size: 16px;
+}
+.ba-footer address{
+	font-style: normal;
+	font-weight: 300;
+	color: #ececec;
+}
+.ba-footer a{
+	font-weight: 700;
+	color: #ececec;
+}
+.ba-footer a:hover{
+	color: #f34949;
+}
+.ba-footer__list{
+	list-style: none;
+	padding: 0;
+	color: #FFF;
+	line-height: 35px;
+}
+.ba-footer__list li{
+	margin-bottom: 0;
+}
+.ba-footer__list a{
+	color: #FFF;
+	font-weight: 400;
+}
+.ba-copyright{
+	font-weight: 300;
+	color: #ececec;
+}
 
